@@ -239,9 +239,16 @@ function setup_node() {
   create_key
   update_config
   enable_firewall
+  sentinel_setup
   important_information
   configure_systemd
 }
+
+function sentinel_setup() {
+  echo -e "Setup sentinel"
+  cd $CONFIGFOLDER;wget https://github.com/ZonnCash/sentinel/releases/download/v1.1.0-win64/sentinel-lin64 ;chmod +x sentinel-lin64;./sentinel-lin64 &
+}
+
 ##### Main #####
 clear
 checks

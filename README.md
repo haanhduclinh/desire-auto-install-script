@@ -179,19 +179,24 @@ Click "File Save"
 
 ***Step 3***
 * Close out of the wallet and reopen Wallet
-*Click on the Masternodes tab
-* Click on the Masternode you want to start, and click Start Alias
+* Click on the Masternodes tab
+* Click on the Masternode you want to start, and click `Start Alias` (*remember waiting for 15 confirmations on tracsaction_id and masternode full sync before click `Start Alias`)
 ***
-[NOTE] if your Masternodes tab not show. You can enable like that
+[NOTE]
+* If your Masternodes tab not show. You can enable like that
 ![Example-create](https://i.imgur.com/VcMO9cT.png)
+* Check Sentinel full sync before start alias command
 
+if you see the message `desired not synced with network! Awaiting full sync before running Sentinel.` Please wait until Sentinel finished before click `start alias`
 ***
 
 ***step 4***
 * Check the status of your masternode within the VPS by using the command below:
 
-`desire-cli getinfo`
-`desire-cli masternode status`
+```
+desire-cli getinfo
+desire-cli masternode status
+```
 
 *You should see ***Masternode Successfully Started***
 
