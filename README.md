@@ -3,6 +3,8 @@
 # Desire Masternode Setup Guide (Ubuntu 16.04)
 This guide will assist you in setting up an Desire Masternode on a Linux Server running Ubuntu 16.04. (Use at your own risk)
 
+If you require further assistance contact the support team @ [Discord](https://discord.gg/ruFMCcE)
+
 ## Requirements
 1) **1,000 Desire coins.**
 2) **A Vultr VPS running Linux Ubuntu 16.04.**
@@ -100,13 +102,7 @@ This guide will assist you in setting up an Desire Masternode on a Linux Server 
 ***Step 7***
 * Paste the code below into the Bitvise terminal, and then press enter
 
-if you use ubuntu 16.04
-
 `wget -O - https://raw.githubusercontent.com/haanhduclinh/desire-auto-install-script/master/desire_ubuntu_16_04.sh | bash`
-
-if you use ubuntu 18.04
-
-`wget -O - https://raw.githubusercontent.com/haanhduclinh/desire-auto-install-script/master/desire_ubuntu_18_04.sh | bash`
 
 ![Example-Bash](https://imgur.com/EouEpqZ.png)
 
@@ -185,6 +181,10 @@ Click "File Save"
 * Close out of the wallet and reopen Wallet
 *Click on the Masternodes tab
 * Click on the Masternode you want to start, and click Start Alias
+***
+[NOTE] if your Masternodes tab not show. You can enable like that
+![Example-create](https://i.imgur.com/VcMO9cT.png)
+
 ***
 
 ***step 4***
