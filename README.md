@@ -1,9 +1,8 @@
 ![Example-Logo](https://pbs.twimg.com/media/DcDeYW5X4AAmQMB.png)
 
-# Desire Masternode Setup Guide (Ubuntu 16.04)
-This guide will assist you in setting up an Desire Masternode on a Linux Server running Ubuntu 16.04. (Use at your own risk)
+# Desire Masternode Setup Guide Ubuntu 16.04
+This guide will assist you in setting up an Desire Masternode on a Linux Server running Ubuntu 16.04 (Use at your own risk)
 
-If you require further assistance contact the support team @ [Discord](https://discord.gg/ruFMCcE)
 
 ## Requirements
 1) **1,000 Desire coins.**
@@ -106,6 +105,22 @@ If you require further assistance contact the support team @ [Discord](https://d
 
 ![Example-Bash](https://imgur.com/EouEpqZ.png)
 
+
+if you see the message
+
+```
+[Errno 111] Connection refused
+Cannot connect to desired. Please ensure desired is running and the JSONRPC port is open to Sentinel.
+```
+
+just type command
+
+```
+systemctl start Desire.service
+desire-cli getblockcount
+```
+
+if it return blockcount large than 0. It's running ;)
 ***
 
 ***Step 8***
